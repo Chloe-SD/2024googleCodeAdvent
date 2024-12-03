@@ -1,5 +1,5 @@
 
-with open('input1.txt', 'r') as file:
+with open('day1\input1.txt', 'r') as file:
     lines = file.readlines()
 
 leftCol = []
