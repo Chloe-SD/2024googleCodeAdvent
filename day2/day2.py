@@ -11,8 +11,7 @@ def safeSequence(numbers):
             inc = False 
     if not (inc or dec):
         return False
-    safe = True
-    if (inc or dec):
+    else:
         for i in range(len(numbers)-1):
             dif = abs(numbers[i+1] - numbers[i])
             if ((dif < 1) or (dif > 3)):
@@ -23,9 +22,7 @@ def safeSequence(numbers):
 safeCount = 0
 
 for line in lines:
-
     numbers = list(map(int, line.strip().split()))
-
     if (safeSequence(numbers)):
         safeCount += 1
         continue
